@@ -149,7 +149,7 @@ export class Fluid{
     simulate(){
         this.updateKeywords();
         this.initFramebuffers();
-        this.multipleSplats(parseInt(Math.random() * 20) + 5);
+        // this.multipleSplats(parseInt(Math.random() * 20) + 5);
         this.noiseSeed = 0.0; 
         this.lastUpdateTime = Date.now();
         this.colorUpdateTimer = 0.0;
@@ -624,8 +624,8 @@ export class Fluid{
         github.domElement.parentElement.appendChild(githubIcon);
         githubIcon.className = 'icon github';
     
-        if (LGL.isMobile())
-            gui.close();
+        // if (LGL.isMobile())
+        gui.close();
 
             
         function reset(){
